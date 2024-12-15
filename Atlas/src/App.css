@@ -219,6 +219,7 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
+  /* border: 1px solid red; */
 }
 
 @media screen and (max-width: 991px) {
@@ -241,6 +242,7 @@ nav ul {
   max-width: 55rem;
   border: 0;
   width: 100%;
+  /* border: 1px solid rebeccapurple; */
   margin-inline: auto;
 }
 
@@ -251,6 +253,7 @@ nav ul {
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
+  /* height: 35rem; */
 }
 
 .bg-green-box,

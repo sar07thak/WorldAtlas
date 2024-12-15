@@ -3,16 +3,14 @@ import { NavLink } from 'react-router-dom'
 export const Header = () => {
   return (
     <>
-     <header className='shadow-md shadow-[#242424]'>
-      <div>
+     <header className=' shadow-md shadow-[#242424]'>
         <div className="px-28 md:px-72 py-16 flex justify-between items-center  ">
           <div className="font-bold ">
             <NavLink to="/">
               <h1>WorldAtlas</h1>
             </NavLink>
           </div>
-
-          <nav>
+          <nav className='md:flex'>
             <ul>
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -35,7 +33,7 @@ export const Header = () => {
             </button>
           </div> */}
         </div>
-      </div>
+      
     </header>
     </>
   )
