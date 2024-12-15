@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "countryName": "India",
+      "population": 1428000000,
+      "area": 3287263,
+      "capital": "New Delhi",
+      "interestingFact": "India is the largest democracy in the world.",
+      "famousSport": "Cricket",
+      "famousPeople": ["Mahatma Gandhi", "Sachin Tendulkar", "A. P. J. Abdul Kalam"]
+    },
+    {
+      "id": 2,
+      "countryName": "United States",
+      "population": 331000000,
+      "area": 9833517,
+      "capital": "Washington, D.C.",
+      "interestingFact": "The U.S. has the world's largest economy.",
+      "famousSport": "American Football",
+      "famousPeople": ["George Washington", "Elon Musk", "Michael Jordan"]
+    },
+    {
+      "id": 3,
+      "countryName": "Brazil",
+      "population": 215000000,
+      "area": 8515767,
+      "capital": "Brasília",
+      "interestingFact": "Brazil is home to the Amazon rainforest.",
+      "famousSport": "Football",
+      "famousPeople": ["Pelé", "Neymar", "Oscar Niemeyer"]
+    },
+    {
+      "id": 4,
+      "countryName": "Japan",
+      "population": 125800000,
+      "area": 377975,
+      "capital": "Tokyo",
+      "interestingFact": "Japan is known for its advanced technology and ancient traditions.",
+      "famousSport": "Baseball",
+      "famousPeople": ["Emperor Naruhito", "Hayao Miyazaki", "Marie Kondo"]
+    },
+    {
+      "id": 5,
+      "countryName": "Australia",
+      "population": 26000000,
+      "area": 7692024,
+      "capital": "Canberra",
+      "interestingFact": "Australia has more kangaroos than people.",
+      "famousSport": "Cricket",
+      "famousPeople": ["Steve Irwin", "Cathy Freeman", "Hugh Jackman"]
+    },
+    {
+      "id": 6,
+      "countryName": "Germany",
+      "population": 84000000,
+      "area": 357022,
+      "capital": "Berlin",
+      "interestingFact": "Germany is known for its high-quality engineering and Oktoberfest.",
+      "famousSport": "Football",
+      "famousPeople": ["Albert Einstein", "Angela Merkel", "Ludwig van Beethoven"]
+    },
+    {
+      "id": 7,
+      "countryName": "South Africa",
+      "population": 60000000,
+      "area": 1219090,
+      "capital": "Pretoria (executive), Bloemfontein (judicial), Cape Town (legislative)",
+      "interestingFact": "South Africa has three capital cities.",
+      "famousSport": "Rugby",
+      "famousPeople": ["Nelson Mandela", "Desmond Tutu", "Charlize Theron"]
+    },
+    {
+      "id": 8,
+      "countryName": "China",
+      "population": 1412000000,
+      "area": 9596961,
+      "capital": "Beijing",
+      "interestingFact": "China is the most populous country in the world.",
+      "famousSport": "Table Tennis",
+      "famousPeople": ["Confucius", "Jack Ma", "Yao Ming"]
+    },
+    {
+      "id": 9,
+      "countryName": "Russia",
+      "population": 146000000,
+      "area": 17098242,
+      "capital": "Moscow",
+      "interestingFact": "Russia is the largest country in the world by area.",
+      "famousSport": "Ice Hockey",
+      "famousPeople": ["Leo Tolstoy", "Vladimir Putin", "Anna Pavlova"]
+    },
+    {
+      "id": 10,
+      "countryName": "Argentina",
+      "population": 46000000,
+      "area": 2780400,
+      "capital": "Buenos Aires",
+      "interestingFact": "Argentina is famous for tango and its beef exports.",
+      "famousSport": "Football",
+      "famousPeople": ["Lionel Messi", "Eva Perón", "Jorge Luis Borges"]
+    },
+    {
+      "id": 11,
+      "countryName": "Portugal",
+      "population": 10400000,
+      "area": 92212,
+      "capital": "Lisbon",
+      "interestingFact": "Portugal is the oldest nation-state in Europe.",
+      "famousSport": "Football",
+      "famousPeople": ["Cristiano Ronaldo", "Vasco da Gama", "Fernando Pessoa"]
+    }
+  ]
+  

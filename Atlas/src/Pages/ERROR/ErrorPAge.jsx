@@ -21,9 +21,9 @@ export const ErrorPAge = () => {
             404
         </div>
         <div class="description glitch" data-text="PAGE NOT FOUND">
-            PAGE NOT FOUND
+            PAGE NOT FOUND 
         </div>
-        <button onClick={handlecloseBtn}>back</button>
+        <button onClick={handlecloseBtn}>Back to Previous Page</button>
     </div>
     {/* <!-- END MAIN --> */}
     </div>
