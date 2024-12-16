@@ -26,17 +26,17 @@ export const CountryDetails = () => {
 
   console.log(params);
   return (
-    <section className="card country-details-card ">
-      <div className="container-card bg-white-box">
+    <section className="card country-details-card border ">
+      <div className="container-card  ">
         {country && (
           <div className="country-image grid grid-two-cols">
             <img
               src={country.flags.svg}
               alt={country.flags.alt}
-              className="flag"
+              className="flag rounded-xl "
             />
-            <div className="country-content">
-              <p className="card-title"> {country.name.official} </p>
+            <div className="country-content flex flex-row md:flex-col justify-between items-center p-5">
+              <p className="card-title md:mt-3 "> {country.name.official} </p>
 
               <div className="infoContainer">
                 <p>
@@ -84,7 +84,7 @@ export const CountryDetails = () => {
         )}
         <div className="country-card-backBtn">
           <NavLink to="/country" className="backBtn">
-            <button>Go Back</button>
+            <button className="px-10 py-4 mt-2 text-gray-400 border-gray-400 shadow-lg shadow-[black]">Go Back</button>
           </NavLink>
         </div>
       </div>

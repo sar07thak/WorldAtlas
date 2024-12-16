@@ -23,19 +23,26 @@ export const SearchFiltre = ({ search , setsearch ,filtre ,setfiltre ,   countri
     
 
   return (
-    <section className='section-searchFilter container '>
-        <input type="text" name="" id="" value={search} onChange={handleInputChange} />
+    <section className='section-searchFilter flex  items-center justify-center gap-10 md:gap-40'>
+        <input 
+        className='rounded-lg p-3 placeholder:font-sans placeholder:text-gray-400  '
+        type="text" name="" id="" value={search} onChange={handleInputChange} placeholder='search-country..' />
 
-    <div>
-        <button onClick={() => sortCountries("asc")}>Asc</button>
+    <div >
+        <span 
+        className='text-2xl text-gray-400 font-semibold py-4 px-10  bg-gradient-to-br from-[#080509] via-[#1a171c] to-[#080509]  rounded-lg'
+        onClick={() => sortCountries("asc")}>Asc</span>
       </div>
 
       <div>
-        <button onClick={() => sortCountries("des")}>Desc</button>
+        
+        <span
+        className='text-2xl font-semibold py-4 px-10  bg-gradient-to-br from-[#080509]  via-[#1a171c] to-[#080509] text-gray-400 rounded-lg'
+        onClick={() => sortCountries("des")}>Desc</span>
       </div>
 
         <div >
-            <select name="" id="" className='select-section'value={filtre} onChange={handleSelectchange} >
+            <select name="" id="" className='select-section text-gray-400 text-2xl font-semibold py-4 px-10 rounded-lg'value={filtre} onChange={handleSelectchange} >
             <option value="all">All</option>
             <option value="Africa">Africa</option>
             <option value="Americas">Americas</option>

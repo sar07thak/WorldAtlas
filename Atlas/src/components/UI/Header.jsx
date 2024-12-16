@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <>
      <header className=' shadow-md bg-[#202020] py-16 h-40 shadow-[#242424] '>
-        <div className="px-28 md:px-72   flex justify-between items-center  ">
+        <div className="px-28 md:px-72  flex justify-between items-center ">
           <div className="font-bold ">
             <NavLink to="/">
               <h1>WorldAtlas</h1>
@@ -34,8 +34,10 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <div className="ham-menu">
-            <button onClick={handleButtonToggle}>
+          <div className="ham-menu ">
+            <button 
+            className=' px-8 py-3 shadow-2xl border-white text-white text-3xl hover:border-[#242424] '
+            onClick={handleButtonToggle}>
               <GiHamburgerMenu />
             </button>
           </div>

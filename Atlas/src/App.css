@@ -77,11 +77,11 @@ button {
 /* Layout  */
 
 .container {
-  max-width: 90rem;
+  max-width: 140rem;
   margin: auto;
 }
 
-.grid {
+/* .grid {
   display: grid;
 }
 
@@ -95,11 +95,20 @@ button {
 
 .grid-four-cols {
   grid-template-columns: repeat(4, 1fr);
-}
+} */
 
 /* Layout  */
 
+header {
+  height: 10rem;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
+  background-color: #202020;
+  width: 100%;
 
+  & .container {
+    height: 10rem;
+  }
+}
 
 .navbar-grid {
   grid-template-columns: 0.5fr 1fr;
@@ -210,7 +219,6 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-  /* border: 1px solid red; */
 }
 
 @media screen and (max-width: 991px) {
@@ -233,7 +241,6 @@ nav ul {
   max-width: 55rem;
   border: 0;
   width: 100%;
-  /* border: 1px solid rebeccapurple; */
   margin-inline: auto;
 }
 
@@ -243,8 +250,7 @@ nav ul {
   background: linear-gradient(71deg, #080509, #1a171c, #080509);
   background-clip: padding-box;
   border-radius: 45px;
-  padding: 40px;
-  /* height: 35rem; */
+  padding: 30px;
 }
 
 .bg-green-box,
@@ -306,9 +312,9 @@ nav ul {
 
 .footer-contact {
   height: 10rem;
-  
+  display: flex;
   gap: 2.4rem;
-
+  align-items: center;
 
   & .icon {
     color: #3a4ed5;
@@ -344,7 +350,14 @@ nav ul {
   }
 }
 
-
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
 
 .copyright-area {
   background: #202020;
@@ -394,18 +407,23 @@ country Card
 }
 
 /* indivisual card container  */
+
 .country-details-card {
   max-width: 100%;
   margin: 6.4rem auto;
   box-shadow: rgba(168, 163, 184, 0.15) 0px 48px 100px 0px;
+  /* border: 1px solid red; */
+  
 
   & .container-card {
     & .grid {
       align-items: center;
+  /* border: 1px solid red; */
     }
 
     & img {
       width: 100%;
+      /* border: 1px solid red; */
       max-width: 30rem;
       margin-bottom: 0;
       height: auto;
@@ -417,7 +435,11 @@ country Card
 
   & .infoContainer {
     display: flex;
+  /* border: 1px solid red; */
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50rem;
     gap: 2.4rem;
   }
 
@@ -430,9 +452,10 @@ country Card
 
 .section-searchFilter {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* display: flex; */
+  /* border: 1px solid red; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
   margin-bottom: 3.2rem;
 
   & .container-card {
@@ -447,19 +470,19 @@ country Card
     letter-spacing: 0.1rem;
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.8);
-    border: 0.05rem solid #fff;
+    /* border: 0.05rem solid #fff; */
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
   }
 
   & .select-section {
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
-    color: rgba(255, 255, 255, 0.8);
-    padding: 0.6rem 2.4rem;
-    border-radius: 5rem;
-    -webkit-border-radius: 5rem;
+    /* color: rgba(255, 255, 255, 0.8); */
+    /* padding: 0.6rem 2.4rem; */
+    /* border-radius: 5rem; */
+    /* -webkit-border-radius: 5rem;
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
-    -o-border-radius: 5rem;
+    -o-border-radius: 5rem; */
     font-family: "urbanist";
     font-size: 1.5rem;
     font-weight: bold;
@@ -556,32 +579,4 @@ contact us Page ends here
   .grid--cols {
     grid-template-columns: 1fr;
   }
-}
-
-/* //Loader  */
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: 50px;
-  padding: 8px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #25b09b;
-  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
-  mask: var(--_m);
-  -webkit-mask-composite: source-out;
-  mask-composite: subtract;
-  animation: l3 1s infinite linear;
-}
-@keyframes l3 {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-.loader-section {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -46,7 +46,9 @@ export const App = () => {
 
 
   return (
-    <RouterProvider router={router}> </RouterProvider>
+    <div className='bg-black'>
+    <RouterProvider router={router} > </RouterProvider>
+    </div>
   )
 }
 

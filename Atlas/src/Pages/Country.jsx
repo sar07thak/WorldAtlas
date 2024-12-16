@@ -64,7 +64,7 @@ const filterCountries =  countries.filter((country) => searchCountry(country)&& 
 
 
 
-    <ul className='grid grid-four-cols'>
+    <ul className='grid grid-cols-2 md:grid-cols-4'>
       {
         filterCountries.map((curCountry , index) => {
           return <CountryCard country={curCountry} /> 
