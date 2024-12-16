@@ -9,6 +9,7 @@ import { About } from './Pages/About';
 import { Contact } from './Pages/Contact';
 import { Applayout } from './components/Layout/Applayout';
 import { ErrorPAge } from './Pages/ERROR/ErrorPAge';
+import { CountryDetails } from './components/Layout/CountryDetails';
 export const App = () => {
 
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ export const App = () => {
         {
           path:"/country",
           element : <Country />
+        },
+        {
+          path:"/country/:id",
+          element : <CountryDetails />
         },
         {
           path:"/About",

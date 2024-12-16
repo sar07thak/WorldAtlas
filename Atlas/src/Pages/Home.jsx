@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <main>
       <HeroSection />
-      <div className=' m-16'>
+      <div className=''>
       <About />
       </div>
     </main>

@@ -13,12 +13,13 @@ export const Footer = () => {
   };
 
   return (
-    <footer className='footer-section'>
-      <div className=" grid grid-cols-3  px-28 ">
+    <footer className='bg-[#151414]'>
+      <div className=" flex justify-evenly items-center   ">
+        
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;
           return (
-            <div className="footer-contact  " key={index}>
+            <div className="footer-contact flex items-center " key={index}>
               <div className="icon">{footerIcon[icon]}</div>
               <div className="footer-contact-text">
                 <p>{title}</p>
@@ -27,6 +28,7 @@ export const Footer = () => {
             </div>
           );
         })}
+      
       </div>
     </footer>
   )

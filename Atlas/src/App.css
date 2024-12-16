@@ -99,16 +99,7 @@ button {
 
 /* Layout  */
 
-header {
-  height: 10rem;
-  /* box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px; */
-  background-color: #202020;
-  width: 100%;
 
-  & .container {
-    height: 10rem;
-  }
-}
 
 .navbar-grid {
   grid-template-columns: 0.5fr 1fr;
@@ -315,9 +306,9 @@ nav ul {
 
 .footer-contact {
   height: 10rem;
-  display: flex;
+  
   gap: 2.4rem;
-  align-items: center;
+
 
   & .icon {
     color: #3a4ed5;
@@ -353,14 +344,7 @@ nav ul {
   }
 }
 
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-.footer-section {
-  background: #151414;
-  position: relative;
-}
+
 
 .copyright-area {
   background: #202020;

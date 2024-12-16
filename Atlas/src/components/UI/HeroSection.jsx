@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa"
 export const HeroSection = () => {
   return (
     <>
-    <div className=' flex md:flex-row flex-col m-24 md:mx-72 py-16 items-center gap-16'>
+    <div className=' flex md:flex-row flex-col m-24 md:mx-72 py-16 items-center justify-center gap-16'>
             <div className="text-5xl font-bold ">
               <h1 className='mb-10'>
                 Expolore the world, one country at a Time.
