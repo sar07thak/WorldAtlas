@@ -52,7 +52,7 @@ const filterCountries =  countries.filter((country) => searchCountry(country)&& 
 
 
   return (
-   <section className='country-section'>
+   <section className='country-section p-10'>
   <SearchFiltre 
   search={search} 
   setsearch={setsearch} 
