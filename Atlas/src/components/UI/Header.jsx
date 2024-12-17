@@ -10,25 +10,25 @@ export const Header = () => {
   }
   return (
     <>
-     <header className=' shadow-md bg-[#202020] py-16 h-40 shadow-[#242424] '>
-        <div className="px-28 md:px-72  flex justify-between items-center ">
-          <div className="font-bold ">
+     <header className=' bg-[#202020] fixed top-[0px] z-[100] px-28 md:px-72  h-40  flex justify-between  items-center '>
+        {/* <div className="px-28 md:px-72  h-40  flex justify-between  items-center border"> */}
+          <div className="">
             <NavLink to="/">
-              <h1>WorldAtlas</h1>
+              <h1 className='font-bold text-5xl gradient-text '>WorldAtlas</h1>
             </NavLink>
           </div>
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
-              <li>
+              <li className='gradient-text ' id='words'>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
+              <li className='gradient-text' id='words'>
                 <NavLink to="/about">About</NavLink>
               </li>
-              <li>
+              <li className='gradient-text' id='words'>
                 <NavLink to="/country">Country</NavLink>
               </li>
-              <li>
+              <li className='gradient-text' id='words'>
                 <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
@@ -36,12 +36,12 @@ export const Header = () => {
 
           <div className="ham-menu ">
             <button 
-            className=' px-8 py-3 shadow-2xl border-white text-white text-3xl hover:border-[#242424] '
+            className=' px-8 py-3 shadow-md hover:shadow-md hover:shadow-black shadow-gray-400  text-white text-3xl hover:border-[#242424] '
             onClick={handleButtonToggle}>
               <GiHamburgerMenu />
             </button>
           </div>
-        </div>
+        {/* </div> */}
       
     </header>
     </>

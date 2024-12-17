@@ -3,7 +3,7 @@ import countryFact from "../Api/countrydata.json"
 export const About = () => {
   return (
     <>
-    <section className='section-about p-5 '>
+    <section className='section-about p-5 mt-40  '>
     <h2 className="container-title">
         Here are the Interesting Facts
         <br />

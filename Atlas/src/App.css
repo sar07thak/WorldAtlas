@@ -101,7 +101,7 @@ button {
 
 header {
   height: 10rem;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
+  /* box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px; */
   background-color: #202020;
   width: 100%;
 
@@ -148,9 +148,13 @@ nav ul {
     position: absolute;
     top: 10rem;
     left: 0;
-    background-color: #0d1212;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* z-index: 1000; */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Subtle shadow effect */
+    z-index: 1000;
+    backdrop-filter: blur(8px);
     width: 100%;
-    box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px;
+    /* box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px; */
   }
 
   .menu-mobile ul {
@@ -579,4 +583,51 @@ contact us Page ends here
   .grid--cols {
     grid-template-columns: 1fr;
   }
+}
+
+.gradient-text {
+  font-size: 2.5rem; /* Adjust font size */
+  font-weight: bold;
+  background: linear-gradient(
+    45deg, 
+    #2f2f2f, /* Dark Gray */
+    #808080, /* Gray */
+    #c0c0c0, /* Silver */
+    #d3d3d3  /* Light Silver */
+  ); /* Gray to Silver Gradient */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  background-clip: text; /* For non-WebKit browsers */
+  color: transparent; /* Fallback for unsupported browsers */
+}
+
+
+#words {
+  font-family: "Reddit Mono", monospace;
+  font-size: 5px;
+  font-weight: 700;
+  color: white;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#words:hover{
+  cursor: pointer;
+}
+
+#words::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+
+  background-color: gray;
+  position: absolute;
+  bottom: 0%;
+  left: -100%;
+  transition: all 0.7s;
+}
+
+#words:hover::before {
+  left: 0%;
 }

@@ -14,7 +14,7 @@ export const Footer = () => {
 
   return (
     // <footer className='bg-[#151414]'>
-      <div className=" flex justify-evenly items-center bg-[#151414] text-md text-white w-ful gap-5  ">
+      <div className=" flex justify-evenly  z-[100] bottom-[0px] items-center bg-[#151414] text-md text-white w-full gap-5  ">
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;
           return (
